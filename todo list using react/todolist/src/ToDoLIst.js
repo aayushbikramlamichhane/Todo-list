@@ -28,7 +28,18 @@ const ToDoLIst = () => {
             <input type='text'placeholder='Enter the task...' 
             value={newTask}
             onChange={handleInputChange}/>
+            <button className='add-button' onClick={addTask}>
+                Add
+                </button>
         </div>
+        <ol>
+            {tasks.map((task,index) =>
+            <li key={index}>
+                <span className='text'>{task}</span>
+                <button>Delete</button>
+            </li>
+            )}
+        </ol>
     </div>
   );
 }
