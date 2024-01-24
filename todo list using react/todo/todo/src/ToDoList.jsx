@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 
-const ToDoLIst = () => {
-    const [tasks,setTasks] = useState([]);
+const ToDoList = () => {
+    const [tasks,setTasks] = useState(["get a milk","run 10 mile"]);
     const [newTask,setnewTasks] = useState("");
 
     function handleInputChange(event){
@@ -28,7 +28,7 @@ const ToDoLIst = () => {
 
     }
     function moveTaskDown(index){
-        if(index>tasks.length-1){
+        if(index < tasks.length - 1){
             const updatedTasks = [...tasks];
             [updatedTasks[index],updatedTasks[index+1]]=
             [updatedTasks[index+1],updatedTasks[index]]
@@ -42,7 +42,7 @@ const ToDoLIst = () => {
     <div className='to-do-list'>
         <h1>Todo List</h1>
         <div>
-            <input type='text'placeholder='Enter the task...' 
+            <input type='text' placeholder='Enter the task...' 
             value={newTask}
             onChange={handleInputChange}/>
             <button className='add-button' onClick={addTask}>
@@ -69,4 +69,4 @@ const ToDoLIst = () => {
   );
 }
 
-export default ToDoLIst
+export default ToDoList

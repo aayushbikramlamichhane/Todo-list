@@ -5,13 +5,14 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   margin: 100px;
+  
 }
 h1{
   font-size: 4rem;
   color: white;
 }
 button{
-  font-size: 1.7rem;
+  
   font-weight: bold;
   padding: 10px 20px;
   color: white;
@@ -22,21 +23,27 @@ button{
 }
 .add-button{
   background-color: hsl(125, 47%, 54%);
+  font-size: 1.7rem;
 }
 .add-button:hover{
   background-color: hsl(125, 47%, 44%);
 }
 .delete-button{
   background-color: hsl(0, 90%, 47%);
+  height: 25px;
+  width: 25px;
 }
 .delete-button:hover{
   background-color: hsl(0, 90%, 57%);
 }
 .move-button{
   background-color: hsl(261, 40%, 57%);
+  height: 5px;
+  width: 5px;
 }
 .move-button:hover{
   background-color: hsl(261, 40%, 47%);
+  
 }
 input[type='text']{
   font-size: 1.6rem;
