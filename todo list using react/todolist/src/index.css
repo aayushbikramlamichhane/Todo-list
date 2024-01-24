@@ -10,4 +10,32 @@ button{
   font-size: 1.7rem;
   font-weight: bold;
   padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5 ease;
+}
+.add-button{
+  background-color: hsl(125, 47%, 54%);
+}
+.add-button:hover{
+  background-color: hsl(125, 47%, 44%);
+}
+.delete-button{
+  background-color: hsl(0, 90%, 47%);
+}
+.delete-button:hover{
+  background-color: hsl(0, 90%, 57%);
+}
+.move-button{
+  background-color: hsl(261, 40%, 57%);
+}
+.move-button:hover{
+  background-color: hsl(261, 40%, 47%);
+}
+input[type='text']{
+  font-size: 1.6rem;
+  padding: 10px;
+  border: 2px solid black;
 }
